@@ -13,10 +13,18 @@
 <header>
 <!-- navbar -->
 
-  
-    <div class="navbar bg-pink-50  border-b-4 border-b-stone-200 ">
-      <div class="navbar-start">
-        <div class="dropdown">
+
+  <!--  -->
+    <div class="navbar bg-pink-100 w-full border-b-4 border-b-stone-200 lg:border-b-0 ">
+      <div class="navbar-start lg:mx-24">
+        <!--  -->
+        <div class="flex relative">
+          <img src="assets/logo-header.png" alt="">
+        <p class="btn btn-ghost text-xl hidden lg:flex">Browge<span class="text-yellow-300 inline-block p-0">4</span>Pets</p>
+        </div>
+
+        <!--  -->
+        <div class="dropdown absolute pl-60">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +43,7 @@
       
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            class="menu menu-sm dropdown-content absolute  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             
             <li>
               
@@ -48,12 +56,10 @@
             
           </ul>
         </div>
+        
         <!-- f -->
         
-        <div class="flex">
-          <img src="assets/logo-header.png" alt="">
-        <a class="btn btn-ghost text-xl hidden lg:flex">Browge4Pets </a>
-        </div>
+        <!--  -->
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 order-1 sm:order-2">
@@ -64,24 +70,26 @@
       </div>
   
       <!--  -->
-      <div class="hidden lg:flex navbar-end">
+      <div class="hidden lg:flex navbar-end lg:mr-24">
         <img src="assets/bell.png" width="25px" height="25px" >
         <img src="assets/magnifying-glass.png" width="25px" height="25px" class="ml-2">
  
-        <a class="btn ml-4">Log in</a> 
-       <a class="btn ml-4">Resister</a>
+        <a class="btn bg-base-100 border border-yellow-300 ml-4">Log in</a> 
+       <a class="btn bg-yellow-300 ml-4">Resister</a>
       </div>
     </div>
   
 <!-- <!- nav close- -->
 
-    <div class="lg:flex flex-col">
-        <div class="lg:absolute">
+    <div class=" lg:relative lg:flex flex-col lg:mx-24">
+        <div class="lg:absolute inset-0">
           <h1 class="lg:text-6xl font-bold">Pamper Your Pet,<br> Because They Deserve <br>the Bes</h1>
-        <p>Discover a world of treats, toys, and essentials handpicked for <br>
+        <p class="mt-2">Discover a world of treats, toys, and essentials handpicked for <br>
              your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="btn bg-yellow-300 mt-2">Find a pet</button>   
         </div>
-      <div> 
+        <div class="lg:absolute inset-0 bg-white bg-opacity-30"></div>
+      <div class=" mb-10 lg:mb-10"> 
         <img src="assets/cat-big.png"   >  
       </div>
         
@@ -90,69 +98,77 @@
 
 
 </header>
-<body class="w-full mx-auto">
+<div class="flex justify-center items-center px-0  py-0 ">
+<div class=" size-12 animate-bounce lg:size-24">
+<img src="assets/arrow-down.png" alt="">
+</div>
+</div>
+
+  
+<body>
+
   <!-- card -->
-   <h1>Browse By Categories</h1>
-<div class="grid grid-cols-2 lg:grid-cols-6" > 
-  <div class="card bg-orange-300 pt-10 h-60 w-40 shadow-xl">
-    <div class=" ml-12 py-4 pl-2 mr-10 rounded-full bg-base-100">
+   <h1 class="text-2xl font-bold size-24 whitespace-nowrap lg:ml-24">Browse By Categories</h1>
+<div class="grid grid-cols-2 lg:grid-cols-6 lg:mx-24" > 
+  <div class="card bg-amber-200 pt-10 h-48 w-[160px] shadow-xl  lg:h-60 w-40">
+    <div class=" ml-12 py-4 pl-3 mr-10 rounded-full bg-base-100">
         <img src="assets/dog-cartoon.png" />
     </div>
-     <div class="card-body items-center text-center">
+     <div class=" card-body items-center text-center py-0 lg:pt-10">
       <h2 class="card-title">Dogs</h2>
       <p>3 Items</p>
     </div>
   </div>  
   
   <!-- ggggg --> 
-  <div class="card bg-orange-300 pt-10 h-48 w-24 shadow-xl lg:h-60 w-40 ">
-    <div class=" ml-12 py-4 pl-2 mr-10 rounded-full bg-base-100">
+  <div class="card bg-amber-200 shadow-xl pt-10 h-48 w-[160px]  lg:h-60 w-40  ">
+    <div class=" ml-12 py-4 pl-3 mr-10 rounded-full bg-base-100 ">
         <img src="assets/fish-cartoon.png" />
     </div>
-     <div class="card-body items-center text-center">
+     <div class="card-body items-center text-center py-0 lg:pt-10">
       <h2 class="card-title">Dogs</h2>
       <p>3 Items</p>
     </div>
   </div>  
   
 <!-- g -->
-<div class="card bg-orange-300 pt-10 h-60 w-40 shadow-xl">
-  <div class=" ml-12 py-4 pl-2 mr-10 rounded-full bg-base-100">
+<div class="card bg-amber-200 pt-10 h-48 w-40 m-2 shadow-xl lg:h-60">
+  <div class=" ml-12 py-4 pl-3 mr-10 rounded-full bg-base-100">
       <img src="assets/cat-cartoon.png" />
   </div>
-   <div class="card-body items-center text-center">
+   <div class="card-body items-center text-center py-0 lg:pt-10">
     <h2 class="card-title">Dogs</h2>
     <p>3 Items</p>
   </div>
 </div>  
 <!-- g -->
-<div class="card bg-orange-300 h-60 w-40 pt-10 shadow-xl">
-  <div class=" ml-12 py-4 pl-2 mr-10 rounded-full bg-base-100">
+<div class="card bg-amber-200 h-48 w-40 pt-10 m-2 shadow-xl lg:h-60">
+  <div class=" ml-12 py-4 pl-3 mr-10 rounded-full bg-base-100">
       <img src="assets/bird-cartoon.png" />
   </div>
-   <div class="card-body items-center text-center">
+   <div class="card-body items-center text-center py-0 lg:pt-10">
     <h2 class="card-title">Dogs</h2>
     <p>3 Items</p>
   </div>
 </div>  
 
 <!-- hh -->
-<div class="card bg-orange-300 pt-10 h-60 w-40 shadow-xl">
-  <div class=" ml-12 py-4 pl-2 mr-10 rounded-full bg-base-100">
+<div class="card bg-amber-200 pt-10 h-48 w-40 m-2 shadow-xl lg:h-60">
+  <div class=" ml-12 py-4 pl-4 mr-10 rounded-full bg-base-100">
       <img src="assets/mouse-cartoon.png" />
   </div>
-   <div class="card-body items-center text-center">
+   <div class="card-body items-center text-center py-0 lg:pt-10">
     <h2 class="card-title">Dogs</h2>
     <p>3 Items</p>
   </div>
 </div>  
 
 <!-- h -->
-<div class="card bg-orange-300 w-40 h-60 pt-10 shadow-xl ">
-  <div class=" ml-12 py-4 pl-2 mr-10 rounded-full bg-base-100">
+<div class="card bg-amber-200 w-40 h-48 pt-10 m-2 shadow-xl lg:h-60 ">
+  <div class=" ml-12 py-4 pl-4 mr-10 rounded-full bg-base-100">
       <img src="assets/rabbit-cartoon.png" />
   </div>
-   <div class="card-body items-center text-center">
+   <div class="card-body items-center text-center py-0 lg:pt-10">
     <h2 class="card-title">Dogs</h2>
     <p>3 Items</p>
   </div>
@@ -160,18 +176,18 @@
 </div>
    <!-- card close -->
     <!-- card sm -->
-<section class="bg-pink-50 w-full p-4 mt-10">
-<h1 class="text-2xl font-bold">Trending Pet Products</h1>
+<section class="bg-pink-50 w-full pl-2 pr-4  mt-10">
+<h1 class="text-2xl font-bold whitespace-nowrap lg:mx-24">Trending Pet Products</h1>
     
-<div class="lg:flex">
-  <div class="  items-center mt-10 rounded p-4 w-full lg:w-1/3">
+<div class="lg:flex lg:mx-24">
+  <div class="bg-amber-200  items-center mt-10 rounded p-4 w-full lg:w-1/3">
     
 
 
     <div class=" mt-8 absolute">
         <h1 class="text-xl">T-Shirt For Dogs</h1>
          <p>Discover a world of treats, toys, and <br>essentials handpicked for </p>
-         <button class="btn">Shop more</button>
+         <button class="btn bg-base-100">Shop more</button>
     </div>
     <div class="ml-24 mt-24 w-2/3 relative">
       <img src="assets/cute-pet-mid.png">
@@ -182,8 +198,8 @@
 
       <!--card left  -->
     
-<div class="grid grid-cols-2 lg:grid-cols-3 w-full" >     
-    <div class="card card-side items-center pl-4  mt-10 w-32 h-24 bg-stone-50 shadow-md lg:w-48 ">
+<div class="grid grid-cols-2 pr-6 gap-10 lg:grid-cols-3 lg:mx-24" >     
+    <div class="card card-side items-center pl-4  mt-10 w-[150px] h-24 bg-stone-50 shadow-md lg:w-48 ">
         <div class="pb-10">
         <div class="avatar" > 
           <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
@@ -207,13 +223,13 @@
       
       
 <!-- card-sm -->
-<div class="card card-side items-center pl-4  mt-10 w-32 h-24  bg-stone-50 shadow-md lg:w-48">
+<div class="card card-side items-center pl-4  mt-10 w-[150px] h-24  bg-stone-50 shadow-md lg:w-48">
     <div class="pb-10">
     <div class="avatar" > 
       <div class=" w-16 rounded bg-pink-100 mt-10 h-16  p-2 ">
         <img src="assets/pet-couch.png" alt="sm device img" class="block lg:hidden"> 
 
-        <img src="assets/dog-cartoon.png"alt="dog" class="hidden lg:block" />
+        <img src="assets/fish-cartoon.png"alt="dog" class="hidden lg:block" />
       </div>
     </div>  
     </div>
@@ -232,13 +248,13 @@
   
 
 <!-- gg 3-->
-<div class="card card-side items-center pl-4 mt-10 w-32 h-24 bg-stone-50 shadow-md lg:w-48">
+<div class="card card-side items-center pl-4  mt-10 w-[150px] h-24 bg-stone-50 shadow-md lg:w-48">
     <div class="pb-10">
     <div class="avatar" > 
       <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
         <img src="assets/pet-couch.png" alt="sm device img" class="block lg:hidden"> 
 
-        <img src="assets/dog-cartoon.png"alt="dog" class="hidden lg:block" />
+        <img src="assets/bird-cartoon.png"alt="dog" class="hidden lg:block" />
       </div>
     </div>  
     </div>
@@ -257,13 +273,13 @@
   
   
 <!-- gg -->
-<div class="card card-side items-center pl-4  mt-10 w-32 h-24 bg-stone-50 shadow-md lg:w-48">
+<div class="card card-side items-center pl-4  mt-10 w-[150px] h-24 bg-stone-50 shadow-md lg:w-48">
     <div class="pb-10">
     <div class="avatar" > 
       <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
         <img src="assets/pet-couch.png" alt="sm device img" class="block lg:hidden"> 
 
-        <img src="assets/dog-cartoon.png"alt="dog" class="hidden lg:block" />
+        <img src="assets/rabbit-cartoon.png"alt="dog" class="hidden lg:block" />
       </div>
     </div>  
     </div>
@@ -281,13 +297,13 @@
   
   
 <!-- g 4 -->
-<div class="card card-side items-center pl-4  mt-10 w-32 h-24 bg-stone-50 shadow-md lg:w-48">
+<div class="card card-side items-center pl-4  mt-10 w-[150px] h-24 bg-stone-50 shadow-md lg:w-48">
     <div class="pb-10">
     <div class="avatar" > 
       <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
         <img src="assets/pet-couch.png" alt="sm device img" class="block lg:hidden"> 
 
-        <img src="assets/dog-cartoon.png"alt="dog" class="hidden lg:block" />
+        <img src="assets/bird-cartoon.png"alt="dog" class="hidden lg:block" />
       </div>
     </div>  
     </div>
@@ -305,13 +321,13 @@
   
   
 <!-- g 5-->
-<div class="card card-side items-center pl-4  mt-10 w-32 h-24 bg-stone-50 shadow-md lg:w-48">
+<div class="card card-side items-center pl-4  mt-10 w-[150px] h-24 bg-stone-50 shadow-md lg:w-48">
     <div class="pb-10">
     <div class="avatar" > 
       <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
         <img src="assets/pet-couch.png" alt="sm device img" class="block lg:hidden"> 
 
-        <img src="assets/dog-cartoon.png"alt="dog" class="hidden lg:block" />
+        <img src="assets/pet-couch.png"alt="dog" class="hidden lg:block" />
       </div>
     </div>  
     </div>
@@ -329,13 +345,13 @@
   
   
 <!-- g 6-->
-<div class="card card-side items-center pl-4  mt-10 w-32 h-24 bg-stone-50 shadow-md lg:w-48">
+<div class="card card-side items-center pl-4  mt-10 w-[150px] h-24 bg-stone-50 shadow-md lg:w-48">
     <div class="pb-10">
     <div class="avatar" > 
       <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
         <img src="assets/pet-couch.png" alt="sm device img" class="block lg:hidden"> 
 
-        <img src="assets/dog-cartoon.png"alt="dog" class="hidden lg:block" />
+        <img src="assets/fish-cartoon.png"alt="dog" class="hidden lg:block" />
       </div>
     </div>  
     </div>
@@ -353,13 +369,13 @@
   
   
 <!-- g7 -->
-<div class="card card-side items-center pl-4  mt-10 w-32 h-24 bg-stone-50 shadow-md lg:w-48">
+<div class="card card-side items-center pl-4  mt-10 w-[150px] h-24 bg-stone-50 shadow-md lg:w-48">
   <div class="pb-10">
   <div class="avatar" > 
     <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
       <img src="assets/pet-couch.png" alt="sm device img" class="block lg:hidden"> 
 
-      <img src="assets/dog-cartoon.png" alt="lg device img" class="hidden lg:block"/>
+      <img src="assets/pet-couch.png" alt="lg device img" class="hidden lg:block"/>
     </div>
   </div>  
   </div>
@@ -382,7 +398,7 @@
   <div class="avatar" > 
     <div class=" w-16 rounded bg-pink-100 mt-10 h-16 p-2 ">
       <img
-        src="assets/dog-cartoon.png"
+        src="assets/rabbit-cartoon.png"
         alt="dog" />
     </div>
   </div>  
@@ -403,34 +419,35 @@
 </div>
 </section>
 <!-- 4th section -->
- <h1>Everyday low Price</h1>
-<section class="lg:grid grid-cols-2 w-full">
- <div class=" bg-fuchsia-300">
+ <h1 class=" whitespace-nowrap mt-10 text-2xl font-bold size-24 lg:mx-24">Everyday low Price</h1>
+<section class="lg:grid grid-cols-2 lg:mx-24 lg:gap-4">
+ 
 <!-- g -->
-   <div class="card card-side  shadow-xl">
-     <div class="card-body">
-       <h2 class="card-title">Pet Grooming Mitt</h2>
-       <p>(Easy Hair Removal)</p>
-       <p>$7.99</p>
+<div class="card card-side  bg-[linear-gradient(to_right,#F8CCFB,#ACD2FD)] shadow-xl">
+    <div class="card-body space-y-0">
+      <p class="mt-24 ">under price</p>
+        <h2 class="card-title">Pet Grooming Mitt</h2>
+        <p class="text-base-100 ">(Easy Hair Removal)</p>
+        <p class="bg-black-200 font-bold text-2xl">$7.99</p>
     </div>
-    <div class="w-60">
+    <div class="w-60 mt-20">
       <img src="assets/cute-dog-mid.png">
     </div>
-  </div>
+</div>
 <!--  -->
   </div>
-  <div class="card card-side bg-amber-200 shadow-xl">
-    <div class="card-body">
+  <div class="card card-side bg-[linear-gradient(to_right,#FFF9F4,#F9DF8A)] shadow-xl">
+    <div class="card-body absolute mt-10">
       <h2 class="card-title">T-Shirt for Dogs</h2>
-      <p>$7.99</p>
+      <p class="text-yellow-300 font-bold text-4xl">$7.99</p>
    </div>
-   <div class="w-60">
+   <div class="w-60 ml-32 mt-24 relative">
      <img src="assets/cute-pet-mid.png ">
    </div>
  </div>
 </section>
 <!-- 5th -->
- <section class="relative z-20">
+ <section class="relative z-20 mb-60 lg:mb-48 lg:mx-24">
  <div class="text-center">
   <h1 class="text-2xl font-bold">FAQ</h1>
 
@@ -448,7 +465,7 @@
     <p>Yes</p>
   </div>
 </div>
-<div class="collapse bg-base-200">
+<div class="collapse bg-base-200 ">
   <input type="radio" name="my-accordion-1" />
   <div class="collapse-title text-xm font-medium">Do you offer pet care advice <br>
   along with product recommendation ?</div>
@@ -462,39 +479,39 @@
 </body>
 <!-- bb -->
   <!-- foot -->
-  <footer class=" footer bg-orange-300 pt-32 relative text-base-content p-10 w-full mt-20 ">
-    <div class="w-3/4 mx-auto absolute -top-10 right-[40px] bottom-[400px] lg: w-4/5 ml-60">
-      <div class="card card-side bg-base-100 shadow-xl">
-        <figure class="w-40 lg:w-60">
+  <footer class=" footer bg-orange-300 pt-64 relative text-base-content p-10 w-full mt-20 lg:pt-40 ">
+    <div class="w-full  pr-10 mx-auto absolute -top-60 left-[2.5%] sm:left-[-40] translate-x-[2.5%] lg:w-4/5  lg:top-[-40] lg:left-[12%] lg:translate-x-[12%] bg lg:translate-y-16 ">
+      <div class="card card-side bg-pink-50 flex-col p-2 lg:flex-row lg:pr-20 lg:pl-4 shadow-xl">
+        <figure class=" gap-2 w-48 ">
           <img
             src="assets/cute-pet-mid.png"
             alt="pet" />
         </figure>
-        <div>
-          <h2 class="text-sm font-bold">Get Pawsome News!</h2>
-          <p>Exclusive training tips, ticks, product deals and more.</p>
-          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-               <div class="card-actions ">
-            <button class="btn btn-primary">Subscribe</button>
+        <div class=" p-6 ">
+          <h2 class="text-sm font-bold w-full lg:mt-20 mb-2">Get Pawsome News!</h2>
+          <p class="mb-2 whitespace-nowrap">Exclusive training tips, ticks, product <br class="block lg:hidden"> deals and more.</p>
+          <input type="text" placeholder="Type here" class="input input-bordered  w-full max-w-xs" />
+               <div class="card-actions">
+            <button class="btn bg-yellow-300 mt-2">Subscribe</button>
                </div>
         </div>
       </div>
     </div>
   <!-- foot -->
    <div class="grid-row lg:grid-cols-3 ">
-    <nav>
+    <nav class="mt-0 lg:ml-40 mt-10">
       <div class="flex">
         <img src="assets/logo-footer.png" alt="">
         <h1>Browse4Pets</h1>
       </div>
       <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
     </nav>
-    <nav class="grid grid-rows-3">
+    <nav class="grid grid-rows-3 mt-0 lg:ml-40 mt-10">
       <a class="link link-hover">Find a pet</a>
       <a class="link link-hover">Breeds</a>
       <a class="link link-hover">Contact us</a>
     </nav>
-    <nav>
+    <nav class="mt-0 lg:ml-40 mt-10">
       <h6 class="footer-title">Follow us</h6>
       <div class="grid grid-flow-col gap-4">
         <div >
